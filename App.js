@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client'
+import MuiTypography from './src/components/MuiTypography'
 
 const App=()=>{
     console.log("hello")
     return(
         <>
-        <h1>Hello</h1>
+        <MuiTypography/>
         </>
     )
 }
