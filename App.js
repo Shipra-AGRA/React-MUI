@@ -2,14 +2,16 @@ import ReactDOM from 'react-dom/client'
 import MuiTypography from './src/components/MuiTypography'
 import MuiButton from './src/components/MuiButton'
 import MuiTextField from './src/components/MuiTextField'
+import MuiSelect from './src/components/MuiSelect'
 
 const App=()=>{
     console.log("hello")
     return(
         <>
         {/* <MuiTypography/>
-        <MuiButton/> */}
-        <MuiTextField/>
+        <MuiButton/>
+        <MuiTextField/> */}
+        <MuiSelect/>
         </>
     )
 }
