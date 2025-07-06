@@ -18,7 +18,7 @@ const MuiButton = () => {
         setFormats(updatedFormats)
     }
 
-    const handleFormatChange = (e: React.MouseEvent<HTMLElement>, updatedFormat: string) => {
+    const handleFormatChange = (e: React.MouseEvent<HTMLElement>, updatedFormat: string | null) => {
         setFormat(updatedFormat)
     }
 
