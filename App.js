@@ -1,11 +1,13 @@
 import ReactDOM from 'react-dom/client'
 import MuiTypography from './src/components/MuiTypography'
+import MuiButton from './src/components/MuiButton'
 
 const App=()=>{
     console.log("hello")
     return(
         <>
         <MuiTypography/>
+        <MuiButton/>
         </>
     )
 }
