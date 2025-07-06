@@ -6,7 +6,7 @@ const MuiRadioButton=()=>{
     const [yoe,setYoe]=useState('')
     console.log(yoe)
 
-    const handleChange=(e:React.ChangeEvent<HTMLElement>)=>{
+    const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
         setYoe(e.target.value)
     }
 return(

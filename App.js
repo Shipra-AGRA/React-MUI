@@ -4,6 +4,7 @@ import MuiButton from './src/components/MuiButton'
 import MuiTextField from './src/components/MuiTextField'
 import MuiSelect from './src/components/MuiSelect'
 import MuiRadioButton from './src/components/MuiRadioButton'
+import MuiCheckBox from './src/components/MuiCheckBox'
 
 const App=()=>{
     console.log("hello")
@@ -12,8 +13,9 @@ const App=()=>{
         {/* <MuiTypography/>
         <MuiButton/>
         <MuiTextField/>
-        <MuiSelect/> */}
-        <MuiRadioButton/>
+        <MuiSelect/>
+        <MuiRadioButton/> */}
+        <MuiCheckBox/>
         </>
     )
 }

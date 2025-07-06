@@ -8,11 +8,11 @@ const MuiSelect = () => {
     console.log("country", country)
     console.log("countries",countries)
 
-    const handleChange = (e: React.ChangeEvent<HTMLElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCountry(e.target.value as string)
     }
 
-    const handleSelect=(e:React.ChangeEvent<HTMLElement>)=>{
+    const handleSelect=(e:React.ChangeEvent<HTMLInputElement>)=>{
         const value=e.target.value
         setCountries(typeof(value)==='string'?value.split(','):value)
     }
