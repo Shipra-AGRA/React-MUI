@@ -1,6 +1,9 @@
 import { InputAdornment, Stack, TextField } from "@mui/material"
+import { useState } from "react"
 
 const MuiTextField = () => {
+
+    const [weight,setWeight]=useState<string | null>(null)
     return (
         <Stack spacing={4}>
             <Stack direction="row" spacing={2}>
@@ -21,7 +24,10 @@ const MuiTextField = () => {
                 <TextField label="Amount"
                 InputProps={{startAdornment:<InputAdornment position="start">$</InputAdornment>}}/>
 
-                <TextField label="weight" InputProps={{endAdornment:<InputAdornment position="end">kg</InputAdornment>}}/>
+                <TextField label="weight" 
+                InputProps={{endAdornment:<InputAdornment position="end">kg</InputAdornment>}}
+                value={weight} error={!weight} helperText={!weight?"Required":"add your weight"}
+                onChange={(e)=>{setWeight(e.target.value)}}/>
             </Stack>
         </Stack>
     )
